@@ -1,0 +1,15 @@
+#!/bin/bash
+
+i=0
+for las in *las; do
+  i=$(( i+1 ))
+done
+
+j=0
+for las in *las; do
+  /home/megan/VoxGen/VoxGen /home/megan/VoxGen/VoxGenPar "$las" quiet
+  j=$(( j + 1 ))
+  jj=$(( j * 100 ))
+  k=$(( (jj / i) ))
+  echo "$k""%"
+done

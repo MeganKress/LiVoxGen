@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for k in {0..2}; do
+  mkdir "R""$k"
+done
+
+i=0
+for file in *las ; do
+  for j in {0..2}; do
+    if [ $(( i % 3 )) -eq "$j" ]
+    then
+        mv "$file" "R""$j"
+    fi
+  done
+  i=$(( i + 1 ))
+done

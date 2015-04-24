@@ -1,0 +1,43 @@
+*******************************************
+
+VoxGen Flat File Formats
+
+*******************************************
+
+Lidar Metric File Format
+
+VoxGen outputs a lidar metric flat file in the 
+	following format by row per voxel column
+	(if there is no file containing the metric, 
+	a default value of -99 is used):
+
+x coordinate vox column center, y coordinate vox 
+	column center, acquisition id, segment id, 
+	pulse_density, pulse_scan_angle,
+	returns_per_pulse, mean, qmean, stdev, 
+	skew, kurt, p10, p20, p30, p40, p50, p60, 
+	p70, p80, p90, p100, d0, d1, d2, d3, d4, 
+	d5, d6, d7, d8, d9, refl_max, shrub_mean,
+	shrub_stdev, shrub_refl_max, tree_mean, 
+	tree_qmean, tree_stdev, tree_rugosity, 
+	tree_skew, tree_kurt, tree_fcover, 
+	tree_fract_al, tree_p10, tree_p20, tree_p30, 
+	tree_p40, tree_p50,tree_p60, tree_p70, tree_p80, 
+	tree_p90, tree_p100, tree_d0, tree_d1, tree_d2, 
+	tree_d3, tree_d4, tree_d5, tree_d6, tree_d7, 
+	tree_d8, tree_d9, tree_iqr, tree_vdr, tree_mad, 
+	tree_aad, tree_crr, tree_refl_max, 
+	ground_elev_mean, ground_slope, ground_aspect, 
+	ground_refl_max
+
+
+*********************************************
+
+Histogram File Format
+
+VoxGen outputs a histogram flat file in the following 
+	format by row per voxel column:
+
+x coordinate vox column center, y coordinate vox column 
+	center,acquisition id, segment id,
+	bin1 number of points,..., binN number of points

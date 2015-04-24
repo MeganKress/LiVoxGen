@@ -1,0 +1,42 @@
+
+Running VoxGen
+
+Prerequisites: The following libraries must be installed. All but kdtree
+		can be installed through Synaptic Package Manager.
+		Download kdtree:
+			https://kdtree.googlecode.com/files/kdtree-0.5.5.tar.gz
+
+	- libLAS: http://www.liblas.org/
+	- libTIFF: http://www.remotesensing.org/libtiff/
+	- Boost: http://www.boost.org/
+	- GDAL: http://www.gdal.org/
+	- kdtree: https://code.google.com/p/kdtree/
+
+1. Make VoxGen Executable
+	In Terminal:
+		cd /path/to/VoxGen
+		sudo make
+
+2. Edit VoxGenPar text file (found in VoxGen directory). If you are running 
+	VoxGenindFile in a directory, you can ignore the file and dir parameters.
+
+3. In VoxGen directory, you then have three options to run the program: 
+
+	A. ./VoxGen
+		You will then be prompted to enter the path to the
+		VoxGenPar file.
+
+	B. ./VoxGen /path/to/VoxGenPar
+
+	C. ./VoxGen /path/to/VoxGenPar /path/to/lasFile (quiet--optional)
+		This option is available because it is used in the VGindFile
+		shell script.
+
+	D. OR (VoxGenindFile method)
+		i. Edit line 4 of VGindFile executable (found in Scripts folder): 
+			/path/to/VoxGen/VoxGen /path/to/VoxGen/VoxGenPar "$las"	
+
+		ii. cd to directory containing LAS files.
+
+		iii. In terminal: /path/to/VGindFile
+

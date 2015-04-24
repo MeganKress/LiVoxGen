@@ -1,0 +1,236 @@
+###################################################################
+##A parameter file of relevant information for the VoxGen Program
+###################################################################
+
+
+# Note: the following three parameters may be skipped if one decides 
+# to pass arguments to VoxGen.
+
+fileORdir file
+inFile /home/megan/Downloads/Hist/c0r6_3.las
+inDir /home/megan/Data/Alaska/Split/R15
+
+###################################################################
+
+# Filtering y or n?
+
+filter n
+
+# If filtering 'y,' select parameters
+
+## Classifications ##
+# A: All
+# U: Unclassified
+# G: Ground
+# L: Low Vegetation
+# M: Medium Vegetation
+# H: High Vegetation
+# B: Building
+# W: Water
+
+classes A
+returns A
+angle 15
+
+
+###################################################################
+
+# Voxel Dimensions
+
+base 13
+height 0.3
+
+# Initial Coordinates(all 0s for min/max from .las file)
+# z1 will usually be 0
+# z2 will usually be 0
+
+z1 0
+z2 0
+
+x1 0
+x2 0
+
+y1 0
+y2 0
+
+# Get zmin and zmax from MinMaxZ program's range.txt output if
+# uniform voxels are desired for multiple .las files in the 
+# same acquisition.
+# If '0' zmin = z1 and zmax = z2, respectively.
+
+zmin 146.23
+zmax 504.70
+
+
+###################################################################
+
+
+#Are the files split y or n? For example, in the form ac_id_segId_splitNum.las.
+split y
+
+#Acquisition id if lidar files do NOT contain it in their names (0 otherwise)
+acquisition 20140728_mack_dome
+
+
+###################################################################
+## OUTPUT FILES
+###################################################################
+
+# R output y or n?
+routput n
+outName rOutFile
+outDirectory /home/megan/Downloads/Routput
+
+
+# VoxData File y or n? The file index number will be appended to 
+# the title in the given directory.
+
+voxdata n
+vdataTitle voxData
+vdataDir /home/megan/Downloads
+
+
+# Histogram Flat File y or n? The acquisition and segment id will 
+# be appended to the title.
+
+hff y
+hffTitle histff
+hffDir /home/megan/Downloads/Hist
+
+
+# Lidar Metrics Flat File y or n? The acquisition and segment id will 
+# be appended to the title.
+
+lmff y
+lmffTitle lmff
+lmffDir /home/megan/Downloads/LidarMetrics
+
+
+# Percentile Flat File y or n? The acquisition and segment id will 
+# be appended to the title.
+
+pff n
+pffTitle percentileff
+pffDir /home/megan/Downloads/Test
+
+###################################################################
+
+
+###################################################################
+#Metrics Files Locations
+###################################################################
+
+# Follow a naming convention for metric .tif files y or n?
+# If 'n,' skip to "# ALL"
+namconv y
+
+#### Alaska Data Naming Convention y or n?
+AKnam y
+AKmetricsDir /media/megan/backup/Data/20140728_mack_dome/metrics/
+
+#### Follow map naming convention as well (metric/mosaic.tif) y or n?
+mapNam y
+mnDir /media/megan/backup/Data/20140728_mack_dome/metrics/
+
+
+#### Else, Follow Naming Convention (acquisitionId_metric.tif)
+metricsDir /home/megan/Data/Alaska/metrics
+
+#Else, no naming convention, so fill in file paths here - 0 if no file
+#If there is a naming convention, label files to use with 1 and 0 if no file.
+
+# All
+all_d0 1
+all_d1 1
+all_d2 1
+all_d3 1
+all_d4 1
+all_d5 1
+all_d6 1
+all_d7 1
+all_d8 1
+all_d9 1
+all_kurt 1
+all_mean 1
+all_p10 1
+all_p20 1
+all_p30 1
+all_p40 1
+all_p50 1
+all_p60 1
+all_p70 1
+all_p80 1
+all_p90 1
+all_p100 1
+all_qmean 1
+all_refl_kurt 0
+all_refl_mean 1
+all_refl_skew 0
+all_refl_stdev 0
+all_skew 1
+all_stdev 1
+pulse_density 1
+pulse_scan_angle 1
+returns_per_pulse 1
+all_refl_max 1
+
+#Ground
+ground_aspect 1
+ground_elev_mean 1
+ground_refl_kurt 0
+ground_refl_mean 1
+ground_refl_skew 0
+ground_refl_stdev 0
+ground_slope 1
+ground_refl_max 1
+
+#Shrub
+shrub_mean 1
+shrub_refl_mean 1
+shrub_refl_stdev 0
+shrub_stdev 1
+shrub_refl_max 1
+
+#Tree
+tree_aad 1
+tree_crr 1
+tree_d0 1
+tree_d1 1
+tree_d2 1
+tree_d3 1
+tree_d4 1
+tree_d5 1
+tree_d6 1
+tree_d7 1
+tree_d8 1
+tree_d9 1
+tree_fcover 1
+tree_fract_all 1
+tree_iqr 1
+tree_kurt 1
+tree_mad 1
+tree_mean 1
+tree_p10 1
+tree_p20 1
+tree_p30 1
+tree_p40 1
+tree_p50 1
+tree_p60 1
+tree_p70 1
+tree_p80 1
+tree_p90 1
+tree_p100 1
+tree_qmean 1
+tree_refl_kurt 0
+tree_refl_mean 1
+tree_refl_skew 0
+tree_refl_stdev 0
+tree_rugosity 0
+tree_skew 1
+tree_stdev 1
+tree_vdr 1
+tree_refl_max 1
+
+
+
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+i=0
+for las in *las; do
+  i=$(( i+1 ))
+done
+
+j=0
+for las in *las; do
+  /home/megan/SplitLas/SplitLas "$las" "$1"
+  j=$(( j + 1 ))
+  
+  echo "$j"" out of ""$i"" files completed."
+done

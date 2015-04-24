@@ -1,0 +1,55 @@
+
+Running SplitLas
+
+Prerequisites: The following library must be installed. It can
+		be installed through Synaptic Package Manager.
+		
+	libLAS: http://www.liblas.org/
+
+
+1. Make SplitLas Executable
+	In Terminal:
+		cd /path/to/VoxGen/SplitLas
+		sudo make
+
+2. Run MinMaxZ on Individual File
+
+	A. Navigate to SplitLas directory.
+	
+	B. In terminal:
+		./SplitLas /path/to/file.las TileSize
+	
+	   Note: TileSize can be an int or double indicating
+		 the side length of each square tile in meters.
+
+	C. Result:
+		For a LAS file "file.las," separate LAS files of
+		the form "file_index.las" will be created in the 
+		directory containing the initial file.
+
+
+3. Run MinMaxZ on a Directory Containing LAS Files
+	
+	A. Navigate to the directory in which the LAS files are
+	   located.
+
+	B. In terminal:
+		/path/to/VoxGen/Scripts/SLindFile TileSize
+
+	   Note: TileSize can be an int or double indicating
+		 the side length of each square tile in meters.
+
+	C. Result:
+		For a LAS file "file.las," separate LAS files of
+		the form "file_index.las" will be created in the 
+		directory containing the initial file.
+
+4. Purpose:
+	VoxGen runs more efficiently with smaller LAS files. Split
+	each LAS file into tiles (remove initial unsplit LAS files),
+	divide the split LAS files into 3 or 4 separate directories using
+	/VoxGen/Scripts/divIntoDir, and then run the script "VGindFile" 
+	on each directory simultaneously.
+
+
+			

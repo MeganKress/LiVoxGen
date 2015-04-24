@@ -1,0 +1,44 @@
+
+Running MinMaxZ
+
+Prerequisites: The following libraries must be installed. Both
+		can be installed through Synaptic Package Manager.
+		
+	- libLAS: http://www.liblas.org/
+	- Boost: http://www.boost.org/
+
+
+1. Make MinMaxZ Executable
+	In Terminal:
+		cd /path/to/VoxGen/MinMaxZ
+		sudo make
+
+2. Run MinMaxZ
+
+	A. Navigate to MinMaxZ directory.
+	
+	B. In terminal:
+		./MinMaxZ /directory/containing/multiple/las/files
+
+	C. Result:
+		range.txt file will be created in the directory 
+		used as an argument. The format of the file will be
+		as follows:
+
+			MinX = 736400
+			MaxX = 742568
+
+			MinY = 7.13646e+06
+			MaxY = 7.14164e+06
+
+			MinZ = 215.77
+			MaxZ = 266.71
+
+3. Purpose:
+	The MinZ and MaxZ arguments can be used in the VoxGenPar parameter
+	file next to "zmin" and "zmax" if one wishes to run VoxGen on a 
+	number of LAS files and maintain consistent vertical voxels.
+
+
+
+			
