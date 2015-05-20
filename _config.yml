@@ -1,11 +1,10 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
-url: "http://www.jacoporabolini.com/emerald"
+title: LiVoxGen | LiDAR Voxel Generator
+description: "A C++ Program to Voxelize LiDAR Data"
+url: "http://megankress.github.io/LiVoxGen/"
 author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+  name: "Megan Kress"
+  email: "kressmeg@msu.edu"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
