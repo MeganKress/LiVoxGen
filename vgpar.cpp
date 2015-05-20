@@ -5,7 +5,7 @@
 #include <fstream>
 #include <sstream>
 #include <map>
-
+#include <cstring>
 
 #include "vgpar.h"
 using namespace std;
@@ -41,10 +41,16 @@ string vgpar::getString(string k)
 double vgpar::getNum(string k)
 {
     string v = vgMap[k];
-    char chars [v.length()];
-    for(unsigned int i = 0; i < v.length(); ++i)
-    {
-        chars[i] = v[i];
-    }
+//    char chars [v.length()];
+//    for(unsigned int i = 0; i < v.length(); ++i)
+//    {
+//        chars[i] = v[i];
+//    }
+
+    char *chars=new char[v.size()+1];
+    chars[v.size()]=0;
+    memcpy(chars,v.c_str(),v.size());
+
     return strtod(chars, NULL);
+
 }

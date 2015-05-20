@@ -1,17 +1,18 @@
 # Makefile: a standard Makefile for VoxGen.cpp
 
 OBJS = SplitLas.o
-TARG = SplitLas.cpp
-CC = g++ -std=c++11
+TARG = SplitLas
+CC = g++
 
-CFLAGS= -Wall
+CFLAGS= -W -Wall -Wextra -pedantic -std=c++11 -std=gnu++11
 
-LIBS = -I/usr/include -I/usr/lib -llas
-SplitLas : $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o SplitLas $(LIBS)
+LIBS = -I/usr/include -I/usr/lib -llas -lboost_filesystem -lboost_system -lboost_thread
 
+all: $(TARG)
 
+$(TARG) : $(TARG).cpp
+	$(CC) $(CFLAGS) -o $(TARG) $(TARG).cpp $(LIBS)
 
 clean:
-	rm -f SplitLas $(OBJS)
+	$(RM) $(TARG)
 

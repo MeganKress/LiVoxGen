@@ -7,14 +7,14 @@
 # to pass arguments to VoxGen.
 
 fileORdir file
-inFile /home/megan/Downloads/Hist/c0r6_3.las
+inFile /media/megan/backup/Data/20140711_tiu_49_59/las/las/R0/l0s547_0.las
 inDir /home/megan/Data/Alaska/Split/R15
 
 ###################################################################
 
 # Filtering y or n?
 
-filter n
+filter y
 
 # If filtering 'y,' select parameters
 
@@ -58,9 +58,8 @@ y2 0
 # same acquisition.
 # If '0' zmin = z1 and zmax = z2, respectively.
 
-zmin 146.23
-zmax 504.70
-
+zmin -494.27
+zmax 775.86
 
 ###################################################################
 
@@ -69,7 +68,7 @@ zmax 504.70
 split y
 
 #Acquisition id if lidar files do NOT contain it in their names (0 otherwise)
-acquisition 20140728_mack_dome
+acquisition 20140725_tiu_7
 
 
 ###################################################################
@@ -126,11 +125,11 @@ namconv y
 
 #### Alaska Data Naming Convention y or n?
 AKnam y
-AKmetricsDir /media/megan/backup/Data/20140728_mack_dome/metrics/
+AKmetricsDir /media/megan/backup/Data/20140725_tiu_7/metrics/
 
 #### Follow map naming convention as well (metric/mosaic.tif) y or n?
-mapNam y
-mnDir /media/megan/backup/Data/20140728_mack_dome/metrics/
+mapNam n
+mnDir /media/megan/backup/Data/20140814_toklat/metrics/
 
 
 #### Else, Follow Naming Convention (acquisitionId_metric.tif)
@@ -225,7 +224,7 @@ tree_refl_kurt 0
 tree_refl_mean 1
 tree_refl_skew 0
 tree_refl_stdev 0
-tree_rugosity 0
+tree_rugosity 1
 tree_skew 1
 tree_stdev 1
 tree_vdr 1

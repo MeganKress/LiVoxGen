@@ -42,7 +42,6 @@ The program may output multiple files:
 #include <boost/filesystem/fstream.hpp>
 #include <boost/filesystem/path.hpp>
 
-
 #include <gdal/cpl_conv.h> // for CPLMalloc()
 #include <gdal/gdal_priv.h>
 //#include <gdal/gdal_alg.h>
@@ -159,6 +158,8 @@ int main(int argc, char *argv[])
 
     std::streambuf* cout_sbuf;
 
+    bool quiet = false;
+
     if (argc > 3)
     {
         cout_sbuf = std::cout.rdbuf(); // save original sbuf
@@ -168,6 +169,7 @@ int main(int argc, char *argv[])
         fileEntry = true;
         vgfile = argv[1];
         enteredFile = argv[2];
+        quiet = true;
     }
     else if (argc > 2)
     {
@@ -423,6 +425,7 @@ int main(int argc, char *argv[])
    vector<Point> allPoints;
 
 
+
    if(par.getString("hff")[0] == 'y')
     {
       while (reader.ReadNextPoint())
@@ -446,6 +449,13 @@ int main(int argc, char *argv[])
       };
 
     }
+
+  if(totalPoints == 0)
+  {
+    ifs.close();
+    if (quiet) cout.rdbuf(cout_sbuf);
+    return 0;
+  }
 
   cout << "\nPoints in kdtree: " << totalPoints <<'\n';
   //Set min and max values for each dimension
@@ -625,18 +635,18 @@ int main(int argc, char *argv[])
 //            double * posy = (double*) malloc(sizeof(double));
 //            double * posz = (double*) malloc(sizeof(double));
 
-            double posx, posy, posz;
+            double pos [3] ;
 
 //            kdPointCount += kd_res_size(results);
 
             while( !kd_res_end( results ) ) {
 
                 /* get the position of the current result item */
-                kd_res_item3( results, &posx, &posy, &posz );
+                kd_res_item( results, pos );
 
-                Point point (posx, posy, posz);
+                Point point (pos[0], pos[1], pos[2]);
 
-                if(voxel.inVox(posx, posy, posz)) {
+                if(voxel.inVox(pos[0], pos[1], pos[2])) {
                     voxel.pointsInVox.push_back(point);
                     ++pointsNum;
 //                    allPoints.resize(std::remove(allPoints.begin(), allPoints.end(), point) - allPoints.begin());
@@ -970,6 +980,8 @@ int main(int argc, char *argv[])
 
         GDALAllRegister();
 
+        cout << "Reading metrics\n";
+
         for(unsigned int ss = 0; ss < filevect.size(); ++ss)
         {
 
@@ -1254,13 +1266,13 @@ int main(int argc, char *argv[])
     // VoxData file creation
     // ***************************************
 
-    string vDataFile = par.getString("voxdata");
-    if(vDataFile[0] == 'y'){
-        cout << "\n\nWriting VoxData to file...\n";
-        string vdatadir = par.getString("vdataDir") + "/" + par.getString("vdataTitle") + id + ".voxdata";
-        data.toFile(vdatadir.c_str());
-        cout << "Done writing VoxData to file.\n";
-    }
+//    string vDataFile = par.getString("voxdata");
+//    if(vDataFile[0] == 'y'){
+//        cout << "\n\nWriting VoxData to file...\n";
+//        string vdatadir = par.getString("vdataDir") + "/" + par.getString("vdataTitle") + id + ".voxdata";
+//        data.toFile(vdatadir.c_str());
+//        cout << "Done writing VoxData to file.\n";
+//    }
 
 
     // ***************************************
@@ -1275,13 +1287,13 @@ int main(int argc, char *argv[])
 
      outFile = outDir + "/" + outName + id + ".R";
 
-    string response = par.getString("routput");
-
-    if (response[0] == 'y') {
-        cout << "\n\nWriting data to R file...\n";
-        toR(voxColumnsVector, numVoxCols, totalnumVox, numVox, outFile);
-        cout << "Done writing data to R file.\n";
-    }
+//    string response = par.getString("routput");
+//
+//    if (response[0] == 'y') {
+//        cout << "\n\nWriting data to R file...\n";
+//        toR(voxColumnsVector, numVoxCols, totalnumVox, numVox, outFile);
+//        cout << "Done writing data to R file.\n";
+//    }
 
 
     // ***************************************
@@ -1341,12 +1353,12 @@ int main(int argc, char *argv[])
     // Percentiles flat file creation
     // ***************************************
 
-    string pff = par.getString("pff");
-    if(pff[0] == 'y')
-    {
-        string pffdir = par.getString("pffDir") + "/" + par.getString("pffTitle") + id;
-        data.toPercMetrics(pffdir.c_str());
-    }
+//    string pff = par.getString("pff");
+//    if(pff[0] == 'y')
+//    {
+//        string pffdir = par.getString("pffDir") + "/" + par.getString("pffTitle") + id;
+//        data.toPercMetrics(pffdir.c_str());
+//    }
 
 
 
@@ -1364,9 +1376,10 @@ int main(int argc, char *argv[])
 
 
 
-  if (argc > 3) std::cout.rdbuf(cout_sbuf); // restore the original stream buffer
+  if (quiet) std::cout.rdbuf(cout_sbuf); // restore the original stream buffer
 
+  cout << "Buffer restored\n";
 
-  return 0;
+  return(0);
 };
 

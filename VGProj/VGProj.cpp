@@ -9,7 +9,7 @@
 #include <cmath>
 #include <exception>
 #include <fstream>  // std::ifstream
-#include "liblas.hpp"
+#include <liblas/liblas.hpp>
 #include <string>
 
 

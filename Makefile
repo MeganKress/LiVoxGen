@@ -6,7 +6,7 @@ CC = g++ -std=c++11
 
 CFLAGS= -Wall
 
-LIBS = -I/usr/include -I/usr/lib -llas -lkdtree -lboost_filesystem -lboost_system -lgdal
+LIBS = -I/usr/include -I/usr/lib -lgdal -llas -lkdtree -lboost_filesystem -lboost_system -lgdal
 VoxGen : $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o VoxGen $(LIBS)
 
