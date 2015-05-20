@@ -1,7 +1,7 @@
 # Site settings
 title: LiVoxGen | LiDAR Voxel Generator
 description: "A C++ Program to Voxelize LiDAR Data"
-url: "http://megankress.github.io/LiVoxGen"
+url: "http://megankress.github.io"
 author:
   name: "Megan Kress"
   email: "kressmeg@msu.edu"
@@ -9,7 +9,7 @@ author:
 
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /LiVoxGen/ # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
