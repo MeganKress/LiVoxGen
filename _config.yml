@@ -5,10 +5,8 @@ url: "http://megankress.github.io/LiVoxGen/"
 author:
   name: "Megan Kress"
   email: "kressmeg@msu.edu"
-<<<<<<< HEAD
   url: ""
-=======
->>>>>>> f89c03e5abf02013a14d4868054b134322c24729
+
 
 # Build settings
 baseurl: /LiVoxGen # Change this to your relative path (ex: /blog/), or leave just a /
