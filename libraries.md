@@ -35,3 +35,6 @@ Boost is a library that in VoxGen allows processing of an entire directory at on
 kdtree is a simple C library that creates and iterates through kd-trees. Kd-trees are k-dimensional binary search trees. In this case, our kd-tree operates in three dimensions corresponding to the x, y, and z values for each point in the LAS file.
 
 The kdtree library has a function to add points to a kd-tree object along with a function to determine the points within a given range of some point.
+
+## Obtaining Libraries
+All libraries but kdtree may be installed from Synaptic Package Manager or through their project websites.
