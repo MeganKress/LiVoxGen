@@ -90,7 +90,7 @@ points from the LAS file.
 </figure> 
 
 <figure>
-  <img src="//img/tree_fcover.png" alt="tree_fcover plot" width="304" height="auto">
+  <img src="img/tree_fcover.png" alt="tree_fcover plot" width="304" height="auto">
   <figcaption>A scatter plot comparing the metric tree_fcover and years since burned (YSB) for each centroid.</figcaption>
 </figure> 
 
