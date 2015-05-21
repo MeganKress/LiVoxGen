@@ -26,6 +26,11 @@ the kdtree library’s function to determine the points within a given range of
 a point returns points in a sphere around the voxel, and the Voxel class only
 wants points within the rectangular prism that is the voxel.
 
+<figure>
+  <img src="img/voxelpic.png" alt="Voxel Nearest Neighbor" width="304" height="auto">
+  <figcaption>kdtree's nearest neighbor function determines all points within a sphere around each voxel centroid.</figcaption>
+</figure> 
+
  
 
  
@@ -74,6 +79,27 @@ points from the LAS file.
 - Voxel Column Metrics Flat File: VoxGen writes a text file in which each row represents data corresponding to a voxel column’s metrics.
 
 - Voxel Column Histogram Flat File: VoxGen writes a text file in which each row has the number of points in each voxel column’s voxels.
+
+
+<hr>
+
+## VoxGenR
+
+VoxGenR is an R package that can be used for basic analysis of voxel
+columns created in VoxGen. For example, selectPoints() displays the centers
+of all the voxel columns and allows the user to select certain points. The
+columns that are selected will be displayed as histograms individually along
+with a heat map of the voxel point densities for all columns selected.
+
+ <figure>
+  <img src="img/heat.png" alt="Heat Map" width="304" height="auto">
+  <figcaption>A heat map created by VoxGenR using the voxel histogram flat files (red is least dense).</figcaption>
+</figure> 
+
+<figure>
+  <img src="img/tree_fcover.png" alt="tree_fcover plot" width="304" height="auto">
+  <figcaption>A scatter plot comparing the metric tree_fcover and years since burned (YSB) for each centroid.</figcaption>
+</figure> 
 
 
 <hr>
