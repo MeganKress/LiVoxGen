@@ -19,8 +19,7 @@ LiVoxGen executable program.
 
 ### Additional Programs
 
-The VoxGen repository contains three additional programs to aid in the pro-
-cessing of LiDAR data.
+The VoxGen repository contains three additional programs to aid in the processing of LiDAR data.
 
 1. MinMaxZ: 
 
