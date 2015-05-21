@@ -7,7 +7,7 @@ title: Contact
 
 Please contact me with any questions, input, or concerns:
 
-<p style="text-align:center">
+<p style="text-align:left">
 Megan Kress
 <br><br>
 Michigan State University
