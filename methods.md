@@ -26,6 +26,11 @@ the kdtree library’s function to determine the points within a given range of
 a point returns points in a sphere around the voxel, and the Voxel class only
 wants points within the rectangular prism that is the voxel.
 
+<figure>
+  <img src="//img/voxelpic.png" alt="Voxel Nearest Neighbor" width="304" height="auto">
+  <figcaption>kdtree's nearest neighbor function determines all points within a sphere around each voxel centroid.</figcaption>
+</figure> 
+
  
 
  
@@ -82,6 +87,11 @@ points from the LAS file.
  <figure>
   <img src="//img/heat.png" alt="Heat Map" width="304" height="auto">
   <figcaption>A heat map created by VoxGenR using the voxel histogram flat files (red is least dense).</figcaption>
+</figure> 
+
+<figure>
+  <img src="//img/tree_fcover" alt="tree_fcover plot" width="304" height="auto">
+  <figcaption>A scatter plot comparing the metric tree_fcover and years since burned (YSB) for each centroid.</figcaption>
 </figure> 
 
 
