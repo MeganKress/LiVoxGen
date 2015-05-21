@@ -4,12 +4,12 @@ title: Contact
 ---
 
 # Contact
-<p style="text-align:right">
+<p style="text-align:center">
 Megan Kress
-
+<br><br>
 Michigan State University
-
-[kressmeg at msu dot edu](mailto:kressmeg@msu.edu)
+<br><br>
+<a href="mailto:kressmeg@msu.edu">kressmeg at msu dot edu</a>
 
 </p>
 
