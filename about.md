@@ -22,20 +22,23 @@ LiVoxGen executable program.
 The VoxGen repository contains three additional programs to aid in the pro-
 cessing of LiDAR data.
 
-1. MinMaxZ
+1. MinMaxZ: 
+
 The purpose of MinMaxZ is to obtain the minimum and maximum z values
 for all LAS files in a certain acqusition. This allows one to run VoxGen
 with consistent voxel heights for all segments. MinMaxZ is executed on the
 directory containing all LAS files for a given acquisition, and it outputs a text
 file “range.txt” that contains the bounds for all LAS files in the directory.
 
-2. VGProj
+2. VGProj: 
+
 VGProj simply takes in a LAS file as an argument and prints its Spatial Ref-
 erence. The user may then document the projection for a given acquisition,
 which is essential for reprojecting the lidar metric flat files when processing
 them with a shapefile or raster with a different spatial reference.
 
-3. SplitLas
+3. SplitLas: 
+
 SplitLas tiles LAS files into manageable smaller LAS files so that VoxGen
 may be run more efficiently.
 
