@@ -6,7 +6,7 @@ title: Libraries
 
 <hr>
 
-### libLAS <img align="right" src="img/liblaslogo.png" alt="libLAS logo" height="50em">
+### [libLAS](http://www.liblas.org/) <img align="right" src="img/liblaslogo.png" alt="libLAS logo" height="50em">
 
 libLAS is a C/C++ library that reads and writes LAS files. As libLAS's Reader object reads the points in the file, the program adds the points to a kd-tree. libLAS's Header class is also important to obtain information about each LAS file.
 
