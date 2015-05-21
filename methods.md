@@ -84,6 +84,13 @@ points from the LAS file.
 <hr>
 
 ## VoxGenR
+
+VoxGenR is an R package that can be used for basic analysis of voxel
+columns created in VoxGen. For example, selectPoints() displays the centers
+of all the voxel columns and allows the user to select certain points. The
+columns that are selected will be displayed as histograms individually along
+with a heat map of the voxel point densities for all columns selected.
+
  <figure>
   <img src="img/heat.png" alt="Heat Map" width="304" height="auto">
   <figcaption>A heat map created by VoxGenR using the voxel histogram flat files (red is least dense).</figcaption>
