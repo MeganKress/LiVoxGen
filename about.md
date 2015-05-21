@@ -15,16 +15,10 @@ the availability of higher computational power.
 The input files in VoxGen, LAS files contain data from LiDAR point
 clouds. Each point has a set of properties described by the LAS file. 
 
-VoxGen takes in a LAS file along with various metric files (in the form of TIFF) that correspond to that
-LAS file and parses the data in two ways:
-- Voxelization: With dimensions chosen by the user, VoxGen splits the
-bounded LAS file into volumetric pixels (voxels) and outputs a file
-with the the center coordinates of each voxel and the points within
-each voxel.
-- Determination of Metrics for Voxel Column Centroids: For each col-
-umn of voxels, VoxGen outputs a file with the column’s centroid xy-
-coordinates along with corresponding metrics for that coordinate (eg.
-densities, percentiles, tree cover, etc.).
+VoxGen takes in a LAS file along with various metric files (in the form of TIFF) that correspond to that LAS file and parses the data in two ways:
+
+- Voxelization: With dimensions chosen by the user, VoxGen splits the bounded LAS file into volumetric pixels (voxels) and outputs a file with the the center coordinates of each voxel and the points within each voxel.
+- Determination of Metrics for Voxel Column Centroids: For each column of voxels, VoxGen outputs a file with the column’s centroid xy-coordinates along with corresponding metrics for that coordinate (eg. densities, percentiles, tree cover, etc.).
 
 ### Setup
 Before installing LiVoxGen, ensure that you have the required [libraries](http://megankress.github.io/LiVoxGen//libraries.html).
