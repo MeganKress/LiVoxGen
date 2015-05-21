@@ -31,8 +31,7 @@ file “range.txt” that contains the bounds for all LAS files in the directory
 
 2. VGProj: 
 
-VGProj simply takes in a LAS file as an argument and prints its Spatial Ref-
-erence. The user may then document the projection for a given acquisition,
+VGProj simply takes in a LAS file as an argument and prints its Spatial Reference. The user may then document the projection for a given acquisition,
 which is essential for reprojecting the lidar metric flat files when processing
 them with a shapefile or raster with a different spatial reference.
 
