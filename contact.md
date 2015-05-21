@@ -4,7 +4,7 @@ title: Contact
 ---
 
 # Contact
-<p style="align:center">
+<p style="text-align:center">
 Megan Kress
 
 Michigan State University
