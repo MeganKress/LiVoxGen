@@ -16,3 +16,8 @@ LiVoxGen may be installed by simply downloading the .zip folder from the [reposi
 
 After extracting the content from the folder into the selected directory, type "make" to create the 
 LiVoxGen executable program.
+
+### Acknowledgements
+LiVoxGen was created under the guidance and with the assistance of Dr. Andrew Finley of the Michigan State University Forestry department.
+
+Jacopo Rabolini created LiVoxGen website [template](http://www.jacoporabolini.com/emerald/).
