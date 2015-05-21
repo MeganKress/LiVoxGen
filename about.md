@@ -10,6 +10,8 @@ More information can be found at the [repository on Github](https://github.com/M
 
 
 ### Setup
+Before installing LiVoxGen, ensure that you have the required [libraries](/LiVoxGen//libraries.html).
+
 LiVoxGen may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/MeganKress/LiVoxGen/archive/master.zip).
 
 After extracting the content from the folder into the selected directory, type "make" to create the 
