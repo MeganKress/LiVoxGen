@@ -80,7 +80,7 @@ points from the LAS file.
 
 ## VoxGenR
  <figure>
-  <img src="/LiVoxGen/img/heat.png" alt="Heat Map" width="304" height="auto">
+  <img src="img/heat.png" alt="Heat Map" width="304" height="auto">
   <figcaption>A heat map created by VoxGenR using the voxel histogram flat files (red is least dense).</figcaption>
 </figure> 
 
