@@ -23,8 +23,8 @@ E-mail:<br>
 Subject:<br>
 <input type="text" name="subject" value="subject"><br>
 Comment:<br>
-<input type="textarea" name="comment" value="your comment" size="50"></textarea><br><br>
+<input type="textarea" name="comment" value="your comment"><br><br>
 <input type="submit" value="Send">
-<a href="email.php">Email Form</a>
 <input type="reset" value="Reset">
+<br><br>
 </form>
