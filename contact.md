@@ -17,11 +17,11 @@ Michigan State University
 
 <form  method="post" action="email.php" enctype="text/plain">
 Name:<br>
-<input type="text" name="name" value="your name"><br>
+<input type="text" name="name"><br>
 E-mail:<br>
-<input type="text" name="mail" value="your email"><br>
+<input type="text" name="mail"><br>
 Comment:<br>
-<input type="textarea" name="comment" value="your comment"><br><br>
+<input type="textarea" name="comment"><br><br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
 <br><br>
