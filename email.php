@@ -2,7 +2,7 @@
 <body>
 
 <?php
-    mail('kressmeg@msu.edu', $_POST['subject'], $_POST['message']);
+    mail('kressmeg@msu.edu', "LiVoxGen Email", $_POST['comment']);
 ?>
 <p>Your email has been sent.</p>
 
