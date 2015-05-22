@@ -15,13 +15,15 @@ Michigan State University
 </p>
 
 
-<form action=mail("kressmeg@msu.edu","Mail from LiVoxGen",$comment method="post" enctype="text/plain">
+<form action="email.php" method="post" enctype="text/plain">
 Name:<br>
 <input type="text" name="name" value="your name"><br>
 E-mail:<br>
 <input type="text" name="mail" value="your email"><br>
+Subject:<br>
+<input type="text" name="subject" value="subject"><br>
 Comment:<br>
-<input type="text" name="comment" value="your comment" size="50"><br><br>
+<input type="textarea" name="comment" value="your comment" size="50"></textarea><br><br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
 </form>
