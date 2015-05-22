@@ -57,7 +57,7 @@ if (isset($_REQUEST['submitted'])) {
   if (empty($errors)) { 
   $from = "From: Our Site!"; //Site name
   // Change this to your email address you want to form sent to
-  $to = "your@email.com"; 
+  $to = "kressmeg@msu.edu"; 
   $subject = "Admin - Our Site! Comment from " . $name . "";
   
   $message = "Message from " . $firstname . " " . $lastname . " 
