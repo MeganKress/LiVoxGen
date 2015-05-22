@@ -25,5 +25,6 @@ Subject:<br>
 Comment:<br>
 <input type="textarea" name="comment" value="your comment" size="50"></textarea><br><br>
 <input type="submit" value="Send">
+<a href="email.php">Email Form</a>
 <input type="reset" value="Reset">
 </form>
