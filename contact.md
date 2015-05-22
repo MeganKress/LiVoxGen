@@ -20,8 +20,6 @@ Name:<br>
 <input type="text" name="name" value="your name"><br>
 E-mail:<br>
 <input type="text" name="mail" value="your email"><br>
-Subject:<br>
-<input type="text" name="subject" value="subject"><br>
 Comment:<br>
 <input type="textarea" name="comment" value="your comment"><br><br>
 <input type="submit" value="Send">
