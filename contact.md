@@ -15,14 +15,7 @@ Michigan State University
 </p>
 
 
-<form  method="post" action="email.php" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="textarea" name="comment"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-<br><br>
+<form accept-charset="UTF-8" action="https://formkeep.com/f/ab8e9e664495" method="POST">
+  <input type="hidden" name="utf8" value="✓">
+  <button type="submit">Submit</button>
 </form>
