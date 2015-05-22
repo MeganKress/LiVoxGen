@@ -15,7 +15,7 @@ Michigan State University
 </p>
 
 
-<form action="email.php" method="post" enctype="text/plain">
+<form  method="post" action="email.php" enctype="text/plain">
 Name:<br>
 <input type="text" name="name" value="your name"><br>
 E-mail:<br>
