@@ -5,7 +5,7 @@ title: Contact
 
 # Contact
 
-Please contact me with any questions, input, or concerns:
+Please contact me with any questions, inputs, or concerns:
 
 <p style="text-align:left">
 Megan Kress
