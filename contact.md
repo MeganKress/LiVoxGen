@@ -16,12 +16,12 @@ Michigan State University
 
 
 <?php
-// The message
-$message = "Line 1\r\nLine 2\r\nLine 3";
-
-// In case any of our lines are larger than 70 characters, we should use wordwrap()
-$message = wordwrap($message, 70, "\r\n");
-
-// Send
-mail('kressmeg@msu.edu', 'LiVoxGen Mail', $message);
-?>
+ $to = "recipient@example.com";
+ $subject = "Hi!";
+ $body = "Hi,\n\nHow are you?";
+ if (mail($to, $subject, $body)) {
+   echo("<p>Email successfully sent!</p>");
+  } else {
+   echo("<p>Email delivery failed…</p>");
+  }
+ ?>
