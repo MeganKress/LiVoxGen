@@ -9,12 +9,21 @@ Please contact me with any questions, input, or concerns:
 
 <p style="text-align:left">
 Megan Kress
-<br><br>
+<br>
 Michigan State University
 <br><br>
-<a href="mailto:kressmeg@msu.edu">kressmeg at msu dot edu</a>
-
 </p>
+
+<form action="MAILTO:kressmeg@msu.edu" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" value="your name"><br>
+E-mail:<br>
+<input type="text" name="mail" value="your email"><br>
+Comment:<br>
+<input type="text" name="comment" value="your comment" size="100"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
 
 
 
