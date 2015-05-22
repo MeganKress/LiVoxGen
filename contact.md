@@ -15,13 +15,13 @@ Michigan State University
 </p>
 
 
-<?php
- $to = "recipient@example.com";
- $subject = "Hi!";
- $body = "Hi,\n\nHow are you?";
- if (mail($to, $subject, $body)) {
-   echo("<p>Email successfully sent!</p>");
-  } else {
-   echo("<p>Email delivery failed…</p>");
-  }
- ?>
+<form action=mail("kressmeg@msu.edu","Mail from LiVoxGen",$comment method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" value="your name"><br>
+E-mail:<br>
+<input type="text" name="mail" value="your email"><br>
+Comment:<br>
+<input type="text" name="comment" value="your comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
