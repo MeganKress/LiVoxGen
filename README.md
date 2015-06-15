@@ -14,4 +14,4 @@ The following libraries must be installed in order to run LiVoxGen. All but kdtr
 - kdtree: https://code.google.com/p/kdtree/
 
 ## Website
-More information can be found at http://megankress.github.io/LiVoxGen/.
+More information can be found at http://bitly.com/livoxgen.
