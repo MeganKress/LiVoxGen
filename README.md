@@ -1,5 +1,3 @@
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MeganKress/livoxgen/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
 # LiVoxGen
 A C++ Program to Voxelize LiDAR Data
 
