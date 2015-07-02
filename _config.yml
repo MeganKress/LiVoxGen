@@ -6,7 +6,7 @@ author:
   name: "Megan Kress"
   email: "kressmeg@msu.edu"
   url: ""
-
+name: LiVoxGen
 
 # Build settings
 baseurl: /LiVoxGen/ # Change this to your relative path (ex: /blog/), or leave just a /
