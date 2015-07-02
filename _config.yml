@@ -1,7 +1,7 @@
 # Site settings
 title: LiVoxGen | LiDAR Voxel Generator
 description: "A C++ Program to Voxelize LiDAR Data"
-url: "http://megankress.github.io"
+url: "http://megankress.github.io/LiVoxGen"
 author:
   name: "Megan Kress"
   email: "kressmeg@msu.edu"
