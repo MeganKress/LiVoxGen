@@ -1,4 +1,4 @@
 ---
 title: Pushbullet
 ---
-LiVoxGen has been posted on the OpenTopography Tool Registry: <http://bit.ly/1TuMwIr>.
+Follow LiVoxGen on Pushbullet: https://www.pushbullet.com/channel?tag=livoxgen
