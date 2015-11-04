@@ -29,8 +29,8 @@ void VoxData::toFile(std::string outFile)
    for(unsigned int i = 0; i < voxcols.size(); ++i)
    {
        //myfile << "VoxCol\n";
-       if(voxcols.at(i).inRaster)
-       {
+       //if(voxcols.at(i).inRaster)
+       //{
        vector<Voxel> vc = voxcols.at(i).voxels;
 
        while(vc.size() > 0)
@@ -42,7 +42,7 @@ void VoxData::toFile(std::string outFile)
 
            vc.pop_back();
        }
-       }
+       //}
    }
 
    myfile.close();
